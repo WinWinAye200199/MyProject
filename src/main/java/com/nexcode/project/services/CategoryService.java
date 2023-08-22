@@ -32,8 +32,6 @@ public class CategoryService {
 		return cateDto;
 	}
 	
-
-	
 	public List<CategoryDto> getCategoryById(Long id){
 		Optional<Category> categories=categoryRepository.findById(id);
 		List<CategoryDto> cateDto=categories.stream().map(c->categoryMapper.toDto(c)).collect(Collectors.toList());

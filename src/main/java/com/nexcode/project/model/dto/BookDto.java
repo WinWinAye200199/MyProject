@@ -18,7 +18,7 @@ public class BookDto {
 	private List<Long> cate_ids;
 	private List<CategoryDto> categories;
 	private List<AuthorDto> authors;
-	private List<Long> author_ids;
+	private List<Long> authorIds;
 	
 	
 }

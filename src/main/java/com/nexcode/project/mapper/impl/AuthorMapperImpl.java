@@ -30,7 +30,7 @@ public class AuthorMapperImpl implements AuthorMapper {
 			return null;
 		}
 		AuthorDto authorDto=new AuthorDto();
-		authorDto.setId(author.getAuthor_id());
+		authorDto.setId(author.getAuthoId());
 		authorDto.setName(author.getName());
 		return authorDto;
 	}

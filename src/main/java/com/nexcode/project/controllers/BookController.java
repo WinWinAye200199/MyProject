@@ -45,6 +45,9 @@ public class BookController {
 	public List<BookResponse> getBook() {
 		
 		List<BookDto>books=bookService.getAllBook();
+//		for (BookDto bookDto : books) {
+//			System.out.println(bookDto.getCategories().size());
+//		}
 		return books.stream().map(bookMapper::toResponse).collect(Collectors.toList());
 	}
 	@GetMapping("/{bookId}")

@@ -9,6 +9,6 @@ import lombok.Setter;
 @Setter
 public class BookRequest {
 	private String name;
-	private List<Long> author_id;
-	private List<Long> cate_id;
+	private List<Long> authorIds;
+	private List<Long> categoryIds;
 }

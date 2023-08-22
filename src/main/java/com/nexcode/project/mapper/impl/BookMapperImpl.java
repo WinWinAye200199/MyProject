@@ -33,8 +33,8 @@ public class BookMapperImpl implements BookMapper{
 			return null;
 		}
 		bookDto.setBookName(request.getName());
-		bookDto.setAuthor_ids(request.getAuthor_id());
-		bookDto.setCate_ids(request.getCate_id());
+		bookDto.setAuthorIds(request.getAuthorIds());
+		bookDto.setCate_ids(request.getCategoryIds());
 		return bookDto;
 	}
 	
